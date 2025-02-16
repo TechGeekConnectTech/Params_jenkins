@@ -3,7 +3,7 @@ pipeline {
 	parameters {
 		string(name: 'ENV', defaultValue: 'staging', description: 'Target environment') 
 		choice(name: 'DEPLOY_REGION', choices: ['us-east-1', 'us-west-2'], description: 'AWS Region') 
-		booleanParam(name: 'RUN_TESTS', defaultValue: true, description: 'Run tests before deployment?')
+		booleanParam(name: 'RUN_TESTS', defaultValue: true, description: 'Do you want Run tests before deployment?')
 	}
 	stages {
 		stage('Build Script') {

@@ -1,2 +1,2 @@
 # Params_jenkins
-To use parameter passed during build
+To use parameter passed during buildxsc

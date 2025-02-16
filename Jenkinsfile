@@ -10,8 +10,8 @@ pipeline {
 			steps {
 				script {
 					echo "This is we are triggering Build Stage"
-				}	
-			}			
+				}
+			}		
 		}
 		stage('Test Script') {
 			steps {
@@ -19,7 +19,7 @@ pipeline {
 					if (params.RUN_TESTS == true) {
 						echo "We are runnig testcase"
 					}
-				}	
+				}
 			}			
 		}
 		stage('Deploy') {
@@ -28,8 +28,8 @@ pipeline {
 					if (params.DEPLOY_REGION == "us-west-2") {
 						echo "Deploying US West 2 Region"
 					}
-				}	
-			}			
+				}
+			}
 		}
 	}
 }
